@@ -28,6 +28,8 @@ $$
 \frac{U_c(s)}{U(s)} = \frac{K_s}{T_ss+1}
 $$
 
+式中， $T_s$ 为时间常数， $K_s$ 为电压放大系数。 
+
 采用三相六状态工作方式运行时，忽略无刷直流电机换相过程，在任意时刻无刷直流电机只有两相导通，无刷直流电机可看作直流电机，则无刷直流电机的电压平衡方程为（假设AB相导通）：
 
 $$
@@ -40,7 +42,7 @@ $$
 U-e = R_sI+L_s\dot{I}
 $$
 
-式中， $R_s=2R$ ， $L_s=2(L-M)$ ，$e=K_e\omega$ 为无刷直流电机的反电动势。
+式中， $R_s=2R$ ， $L_s=2(L-M)$ ， $e=K_e\omega$ 为无刷直流电机的反电动势。
 
 则数学模型如下：
 
@@ -110,7 +112,12 @@ $$
 \begin{bmatrix}
     U_c\\
     P_{sea}
-\end{bmatrix}\\
-\dot{X} = A\cdot X+B\cdot U\\
+\end{bmatrix}
+$$
+
+$$
+\begin{split}
+    \dot{X} = A\cdot X+B\cdot U\\
 y  = V = Ax_3 = Ax
+\end{split}
 $$
